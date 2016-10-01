@@ -2,6 +2,9 @@
 
 ## Milestone 1
 
-- [ ] set up development environment
+- [ ] install development environment
+- [ ] install production environment
+
+## Milestone 2
 
 ## Done

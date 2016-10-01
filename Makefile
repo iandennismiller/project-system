@@ -35,6 +35,6 @@ release:
 # create a homebrew install script
 homebrew:
 	bin/poet-homebrew.sh
-	cp /tmp/project_system.rb etc/project_system.rb
+	cp /tmp/project-system.rb etc/project-system.rb
 
 .PHONY: clean install test watch docs release tox dev homebrew

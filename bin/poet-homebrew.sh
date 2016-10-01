@@ -2,7 +2,7 @@
 # based on https://github.com/Homebrew/brew/blob/master/docs/Python-for-Formula-Authors.md#installing
 # rebuild with 'make homebrew'
 
-PKG=project_system
+PKG=project-system
 
 source $(brew --prefix)/bin/virtualenvwrapper.sh
 
@@ -16,10 +16,10 @@ pip install homebrew-pypi-poet
 poet ${PKG} > /tmp/poet.rb
 
 # extract python package URL
-URL=$(perl -n000e 'print $1 while /^..resource\s\"project_system\"\sdo\n\s+url\s\"(.*?)\"\n.*?\n..end\n\n/mg' /tmp/poet.rb)
+URL=$(perl -n000e 'print $1 while /^..resource\s\"project-system\"\sdo\n\s+url\s\"(.*?)\"\n.*?\n..end\n\n/mg' /tmp/poet.rb)
 
 # remove package resource from poet manifest
-perl -0777 -i.original -pe 's/..resource\s\"project_system\"\sdo\n.*?\n.*?\n..end\n\n//igs' /tmp/poet.rb
+perl -0777 -i.original -pe 's/..resource\s\"project-system\"\sdo\n.*?\n.*?\n..end\n\n//igs' /tmp/poet.rb
 
 # determine sha256 checksum for python package
 curl -q -o /tmp/pkg.tgz ${URL}
@@ -32,7 +32,7 @@ cat > /tmp/pkg.rb <<-EOF
 # project-system, Ian Dennis Miller
 # rebuild with 'make homebrew'
 
-class Pub2 < Formula
+class ProjectSystem < Formula
   desc "create and open projects"
   homepage "https://github.com/iandennismiller/project-system"
   url "${URL}"

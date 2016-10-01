@@ -1,13 +1,13 @@
 #!/bin/bash
-# diamond-patterns 2016 Ian Dennis Miller
-# http://github.com/iandennismiller/diamond-patterns
+# project-system 2016 Ian Dennis Miller
+# http://github.com/iandennismiller/project-system
 
 PROJECT_NAME="$1"
 
 WORK_PATH=~/Work
 
-if [ -f ~/.diamond-patterns.conf  ]; then
-    source ~/.diamond-patterns.conf
+if [ -f ~/.project-system.conf  ]; then
+    source ~/.project-system.conf
 fi
 
 function project-git-init() {

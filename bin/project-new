@@ -1,19 +1,19 @@
 #!/bin/bash
-# diamond-patterns 2016 Ian Dennis Miller
-# http://github.com/iandennismiller/diamond-patterns
+# project-system 2016 Ian Dennis Miller
+# http://github.com/iandennismiller/project-system
 
 PROJECT_NAME="$1"
 
 WORK_PATH=~/Work
 PYTHON2_BIN=/usr/local/bin/python
 
-if [ -f ~/.diamond-patterns.conf  ]; then
-    source ~/.diamond-patterns.conf
+if [ -f ~/.project-system.conf  ]; then
+    source ~/.project-system.conf
 fi
 
 function usage() {
 cat <<-EOF
-Diamond-Patterns - http://github.com/iandennismiller/diamond-patterns
+project-system - http://github.com/iandennismiller/project-system
 
 Usage: project-new [project-name]
 

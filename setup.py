@@ -24,6 +24,7 @@ setup(
     description="create and open projects",
     packages=find_packages(),
     scripts=[
+        "bin/project-conf-init",
         "bin/project-git-init",
         "bin/project-list",
         "bin/project-new",

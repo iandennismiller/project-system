@@ -30,7 +30,7 @@ Homebrew
 
 ::
 
-    brew install https://raw.githubusercontent.com/iandennismiller/project-system/master/etc/project_system.rb
+    brew install https://raw.githubusercontent.com/iandennismiller/project-system/master/etc/project-system.rb
 
 Python pip
 ~~~~~~~~~~

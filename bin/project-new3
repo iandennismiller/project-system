@@ -2,6 +2,8 @@
 # project-system 2016 Ian Dennis Miller
 # http://github.com/iandennismiller/project-system
 
+source /usr/local/bin/virtualenvwrapper.sh
+
 PROJECT_NAME="$1"
 
 WORK_PATH=~/Work

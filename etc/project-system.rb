@@ -5,8 +5,8 @@
 class ProjectSystem < Formula
   desc "create and open projects"
   homepage "https://github.com/iandennismiller/project-system"
-  url "https://files.pythonhosted.org/packages/80/be/53470e1921e58182386f484739dca9f173ecdb47b2d5de96ad9e93d99ad1/project-system-0.1.0.tar.gz"
-  sha256 "c7526b5c8be9db9073b8b6b48ffdbdc3bb445729c2f4a43c1c7095181cb2d4f3"
+  url "https://files.pythonhosted.org/packages/3f/8c/2776aa685a2fa58c76a71747856c88cecdbe4d50bb3707bd48afef5d2056/project-system-0.1.2.tar.gz"
+  sha256 "527c3424888982361c5cbfe888f0cde4cad7c255a7c55c5ccbe7e7a2d1e2fb98"
 
   resource "Jinja2" do
     url "https://files.pythonhosted.org/packages/f2/2f/0b98b06a345a761bec91a079ccae392d282690c2d8272e708f4d10829e22/Jinja2-2.8.tar.gz"

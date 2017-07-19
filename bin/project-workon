@@ -5,7 +5,7 @@
 PROJECT_NAME="$1"
 
 WORK_PATH=~/Work
-WORK_CMD="workon ${PROJECT_NAME}"
+WORK_CMD="workon"
 EDIT_CMD="subl ."
 PROJECT_OPEN_CMD="project-open"
 

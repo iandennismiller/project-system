@@ -2,12 +2,12 @@
 # project-system 2016 Ian Dennis Miller
 # http://github.com/iandennismiller/project-system
 
-source /usr/local/bin/virtualenvwrapper.sh
+source `which virtualenvwrapper.sh`
 
 PROJECT_NAME="$1"
 
 WORK_PATH=~/Work
-PYTHON2_BIN=/usr/local/bin/python
+PYTHON2_BIN=`which python`
 
 if [ -f ~/.project-system.conf  ]; then
     source ~/.project-system.conf

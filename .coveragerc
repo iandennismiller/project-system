@@ -1,6 +1,0 @@
-[run]
-source = project_system
-[report]
-omit =
-    */python?.?/*
-    */site-packages/nose/*

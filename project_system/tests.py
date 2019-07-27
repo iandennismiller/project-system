@@ -13,6 +13,7 @@ class BasicTestCase(TestCase):
     def tearDown(self):
         pass
 
+    @attr("skip")
     def test_basic(self):
         "ensure the minimum test works"
         self.assertEqual(main(1), 2)

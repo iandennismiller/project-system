@@ -10,7 +10,7 @@ function usage() {
 cat <<-EOF
 project-system - http://github.com/iandennismiller/project-system
 
-Usage: diamond-conf-init
+Usage: project-conf-init
 
 Options:
 
@@ -18,7 +18,7 @@ Options:
 
 Description:
 
-    diamond-conf-init creates a basic configuration file
+    project-conf-init creates a basic configuration file
     in ~/.project-system.conf and will overwrite any file
     that is already present.
 
@@ -45,8 +45,7 @@ WORK_CMD="workon"
 EDIT_CMD="subl ."
 
 # python interpreters
-PYTHON2_BIN=/usr/local/bin/python
-PYTHON3_BIN=/usr/local/bin/python3
+PYTHON_BIN=/usr/local/bin/python3
 EOF
 echo "created ~/.project-system.conf"
 }

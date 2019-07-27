@@ -1,14 +1,13 @@
 # project-system (c) Ian Dennis Miller
 
-SHELL=/bin/bash
-MOD_NAME=project_system
-TEST_CMD=nosetests -w $(MOD_NAME) -c etc/tests.cfg --with-coverage --cover-package=$(MOD_NAME)
-
 install:
 	python setup.py install
 
 dev:
-	pip install -r requirements-dev.txt
+	pip install -r .requirements-dev.txt
+
+requirements:
+	pip install -r requirements.txt
 
 clean:
 	rm -rf build dist *.egg-info
@@ -16,25 +15,13 @@ clean:
 	find . -name __pycache__ -delete
 
 docs:
-	rm -rf build/sphinx
 	sphinx-build -b html docs build/sphinx
 
-watch:
-	watchmedo shell-command -R -p "*.py" -c 'date; $(TEST_CMD); date' .
-
 test:
-	$(TEST_CMD)
-
-tox:
-	tox
+	tox -c .tox.ini
 
 release:
-	# first: python setup.py register
-	python setup.py sdist upload
+        python setup.py sdist bdist_wheel
+        twine upload dist/*
 
-# create a homebrew install script
-homebrew:
-	bin/poet-homebrew.sh
-	cp /tmp/project-system.rb etc/project-system.rb
-
-.PHONY: clean install test watch docs release tox dev homebrew
+.PHONY: clean install test docs release dev requirements

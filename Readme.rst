@@ -1,7 +1,7 @@
 project-system
 ==============
 
-create and open projects
+Create and open projects.
 
 .. image:: https://img.shields.io/github/stars/iandennismiller/project-system.svg?style=social&label=GitHub
     :target: https://github.com/iandennismiller/project-system
@@ -13,33 +13,35 @@ create and open projects
     :target: http://project-system.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. image:: https://travis-ci.org/iandennismiller/project-system.svg?branch=master
-    :target: https://travis-ci.org/iandennismiller/project-system
+.. .. image:: https://travis-ci.org/iandennismiller/project-system.svg?branch=master
+..     :target: https://travis-ci.org/iandennismiller/project-system
 
-.. image:: https://coveralls.io/repos/github/iandennismiller/project-system/badge.svg?branch=master
-    :target: https://coveralls.io/github/iandennismiller/project-system?branch=master
+.. Overview
+.. --------
 
-Overview
---------
+Quick Start
+-----------
 
-Installation
-^^^^^^^^^^^^
-
-Homebrew
-~~~~~~~~
+Create a new project.
+Then, start working on it.
 
 ::
 
-    brew install https://raw.githubusercontent.com/iandennismiller/project-system/master/etc/project-system.rb
+    project-new my-project
+    project-workon my-project
 
-Python pip
-~~~~~~~~~~
+See `<https://project-system.readthedocs.io/en/latest/usage.html>`_ for more.
+
+Installation
+------------
 
 ::
 
     pip install project-system
+    project-conf-init
 
-Documentation
-^^^^^^^^^^^^^
+Online Resources
+----------------
 
-http://project-system.readthedocs.io
+- https://project-system.readthedocs.io
+- https://github.com/iandennismiller/project-system

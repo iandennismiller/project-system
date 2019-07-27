@@ -7,7 +7,7 @@ source `which virtualenvwrapper.sh`
 PROJECT_NAME="$1"
 
 WORK_PATH=~/Work
-PYTHON2_BIN=`which python`
+PYTHON_BIN=`which python3`
 
 if [ -f ~/.project-system.conf  ]; then
     source ~/.project-system.conf
@@ -33,7 +33,7 @@ EOF
 function project-new() {
     mkdir "${WORK_PATH}/${PROJECT_NAME}"
     cd "${WORK_PATH}/${PROJECT_NAME}"
-    mkvirtualenv -a . -p ${PYTHON2_BIN} "${PROJECT_NAME}"
+    mkvirtualenv -a . -p ${PYTHON_BIN} "${PROJECT_NAME}"
     project-git-init "${PROJECT_NAME}"
     project-workon "${PROJECT_NAME}"
 }

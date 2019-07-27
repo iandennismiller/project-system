@@ -6,6 +6,4 @@ python:
 install:
   - make dev install
 script:
-  - nosetests -w project_system -c etc/tests.cfg --with-coverage --cover-package=project_system
-after_success:
-  - coveralls --rcfile=.coveragerc
+  - make test

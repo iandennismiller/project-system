@@ -28,7 +28,6 @@ setup(
         "bin/project-git-init",
         "bin/project-list",
         "bin/project-new",
-        "bin/project-new3",
         "bin/project-open",
         "bin/project-workon",
     ],

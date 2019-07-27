@@ -21,7 +21,7 @@ test:
 	tox -c .tox.ini
 
 release:
-        python setup.py sdist bdist_wheel
-        twine upload dist/*
+	python setup.py sdist bdist_wheel
+	twine upload dist/*
 
 .PHONY: clean install test docs release dev requirements

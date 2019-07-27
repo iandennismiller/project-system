@@ -3,7 +3,7 @@
 
 from nose.plugins.attrib import attr
 from unittest import TestCase
-from . import main
+# from . import main
 
 
 class BasicTestCase(TestCase):

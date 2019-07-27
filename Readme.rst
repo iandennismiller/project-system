@@ -2,6 +2,7 @@ project-system
 ==============
 
 Create and open projects.
+Use multiple workstations to work on projects.
 
 .. image:: https://img.shields.io/github/stars/iandennismiller/project-system.svg?style=social&label=GitHub
     :target: https://github.com/iandennismiller/project-system
@@ -13,11 +14,12 @@ Create and open projects.
     :target: http://project-system.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
-.. .. image:: https://travis-ci.org/iandennismiller/project-system.svg?branch=master
-..     :target: https://travis-ci.org/iandennismiller/project-system
+.. image:: https://travis-ci.org/iandennismiller/project-system.svg?branch=master
+    :target: https://travis-ci.org/iandennismiller/project-system
 
-.. Overview
-.. --------
+**Project-System** simplifies the management of projects within a working space.
+Each project consists of a folder and a python virtual environment.
+The folder is initialized for git and it is designed to correspond to a remote git repository.
 
 Quick Start
 -----------
@@ -30,7 +32,7 @@ Then, start working on it.
     project-new my-project
     project-workon my-project
 
-See `<https://project-system.readthedocs.io/en/latest/usage.html>`_ for more.
+See `Usage <https://project-system.readthedocs.io/en/latest/usage.html>`_ for more.
 
 Installation
 ------------
@@ -43,5 +45,5 @@ Installation
 Online Resources
 ----------------
 
-- https://project-system.readthedocs.io
-- https://github.com/iandennismiller/project-system
+- `Documentation <https://project-system.readthedocs.io>`_
+- `Open Source Project <https://github.com/iandennismiller/project-system>`_

@@ -9,6 +9,16 @@ Usage
 Commands
 --------
 
+**Project-System** manages projects in terms of a folder, git repo, and python virtual environment.
+The general pattern is to make a new project and then ``workon`` it:
+
+::
+
+    project-new some-project-name
+    project-workon some-project-name
+
+All of the commands are listed here.
+
 project-workon
 ^^^^^^^^^^^^^^
 

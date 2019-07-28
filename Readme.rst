@@ -25,11 +25,17 @@ Quick Start
 -----------
 
 Create a new project.
-Then, start working on it.
+This makes a new folder, git repo, and virtual environment for the project.
 
 ::
 
     project-new my-project
+
+Start working on the project.
+This step opens a code editor and new ``tmux`` window for the project.
+
+::
+
     project-workon my-project
 
 See `Usage <https://project-system.readthedocs.io/en/latest/usage.html>`_ for more.
@@ -40,7 +46,12 @@ Installation
 ::
 
     pip install project-system
-    project-conf-init
+
+To get the most from project-system, use `tmux <https://github.com/tmux/tmux/wiki>`_.
+
+::
+
+    apt install tmux
 
 Online Resources
 ----------------

@@ -4,6 +4,10 @@
 
 WORK_PATH=~/Work
 
+if [ ! -f ~/.project-system.conf  ]; then
+    project-conf-init
+fi
+
 if [ -f ~/.project-system.conf  ]; then
     source ~/.project-system.conf
 fi

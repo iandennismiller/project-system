@@ -4,6 +4,14 @@
 
 source `which virtualenvwrapper.sh`
 
+if [ ! -f ~/.project-system.conf  ]; then
+    project-conf-init
+fi
+
+if [ -f ~/.project-system.conf  ]; then
+    source ~/.project-system.conf
+fi
+
 tmux new-window -c "${WORK_PATH}/${PROJECT_NAME}" -n "${PROJECT_NAME}"
 tmux send-keys -t "${PROJECT_NAME}" "${EDIT_CMD}" C-m
 tmux send-keys -t "${PROJECT_NAME}" "${WORK_CMD} ${PROJECT_NAME}" C-m

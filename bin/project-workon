@@ -9,6 +9,10 @@ WORK_CMD="workon"
 EDIT_CMD="subl ."
 PROJECT_OPEN_CMD="project-open"
 
+if [ ! -f ~/.project-system.conf  ]; then
+    project-conf-init
+fi
+
 if [ -f ~/.project-system.conf  ]; then
     source ~/.project-system.conf
 fi

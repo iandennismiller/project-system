@@ -2,9 +2,7 @@
 # project-system 2016 Ian Dennis Miller
 # http://github.com/iandennismiller/project-system
 
-if [ -f ~/.project-system.conf  ]; then
-    source ~/.project-system.conf
-fi
+PYTHON_BIN=`which python3`
 
 function usage() {
 cat <<-EOF
@@ -29,23 +27,25 @@ function conf-init() {
 cat > ~/.project-system.conf <<-EOF
 # project-system
 
-# command to open a project
-# or, use your own script to open a project:
-# PROJECT_OPEN_CMD=~/bin/project-open
+# Command to open a project
 PROJECT_OPEN_CMD=project-open
+# Or, use your own script to open a project:
+# PROJECT_OPEN_CMD=~/bin/project-open
 
-# location of work directory
+# Location of work directory
 WORK_PATH=~/Work
 
-# command to enter a virtual environment.
-# it will be invoked with argument: WORK_CMD PROJECT_NAME
+# Command to enter a virtual environment.
+# Will be invoked with argument: WORK_CMD PROJECT_NAME
 WORK_CMD="workon"
 
-# command to open an editor focused on the current path
+# Command to open an editor focused on the current path
 EDIT_CMD="subl ."
+# Default is Sublime Text.  An alternative is VS Code:
+# EDIT_CMD="code ."
 
-# python interpreters
-PYTHON_BIN=/usr/local/bin/python3
+# Global Python interpreter
+PYTHON_BIN=${PYTHON_BIN}
 EOF
 echo "created ~/.project-system.conf"
 }

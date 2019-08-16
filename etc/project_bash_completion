@@ -1,0 +1,17 @@
+#!/bin/bash
+
+_project_completion()
+{
+    local cur prev opts
+
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+
+    # the available completions are directory names within the Work directory
+    opts="`ls -1t ~/Work`"
+    COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
+    return 0
+}
+
+complete -F _project_completion -o default project-workon

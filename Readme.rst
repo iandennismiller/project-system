@@ -24,15 +24,19 @@ The folder is initialized for git and it is designed to correspond to a remote g
 Quick Start
 -----------
 
-Create a new project.
-This makes a new folder, git repo, and virtual environment for the project.
+Create a new project
+^^^^^^^^^^^^^^^^^^^^
+
+This makes a new folder, git repo, and Python virtual environment for the project.
 
 ::
 
     project-new my-project
 
-Start working on the project.
-This step opens a code editor and new ``tmux`` window for the project.
+Start working on the project
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Open a code editor and new ``tmux`` window for the project.
 
 ::
 
@@ -47,27 +51,7 @@ Installation
 
     pip install project-system
 
-To get the most from project-system, use `tmux <https://github.com/tmux/tmux/wiki>`_.
-
-::
-
-    apt install tmux
-
-Optionally, to install bash completion scripts:
-
-::
-
-    project-completion-init
-
-Now the `project-workon` script supports auto-completion of projects by name.
-
-Ensure ~/.bashrc contains the following:
-
-::
-
-    for bcfile in ${COMPLETION_PATH}/* ; do
-        [ -f "\$bcfile" ] && . \$bcfile
-    done
+See `Installation <https://project-system.readthedocs.io/en/latest/install.html>`_ for more.
 
 Online Resources
 ----------------

@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.2.3
+-----
+
+2019-08-16
+
+- bash tab completion
+- autodetect location of virtualenvwrapper
+
 0.2.1
 -----
 

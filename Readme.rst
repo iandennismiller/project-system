@@ -53,13 +53,21 @@ To get the most from project-system, use `tmux <https://github.com/tmux/tmux/wik
 
     apt install tmux
 
-To install bash completion scripts:
+Optionally, to install bash completion scripts:
 
 ::
 
     project-completion-init
 
 Now the `project-workon` script supports auto-completion of projects by name.
+
+Ensure ~/.bashrc contains the following:
+
+::
+
+    for bcfile in ${COMPLETION_PATH}/* ; do
+        [ -f "\$bcfile" ] && . \$bcfile
+    done
 
 Online Resources
 ----------------

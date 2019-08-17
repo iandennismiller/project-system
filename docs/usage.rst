@@ -49,6 +49,11 @@ project-conf-init
 Create a basic configuration file called ``~/.project-system.conf``.
 Overwrites any file that is already present.
 
+project-completion-init
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Install bash completion for ``project-workon`` in ``~/.completion.d``.
+
 project-git-init
 ^^^^^^^^^^^^^^^^
 

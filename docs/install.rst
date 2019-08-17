@@ -19,10 +19,12 @@ To install for all users of the system, use sudo:
 Requirements
 ------------
 
-**project-system** requires some other software in order to function.
+**project-system** requires other software in order to function.
 
 virtualenvwrapper
 ^^^^^^^^^^^^^^^^^
+
+`virtualenvwrapper <https://pypi.org/project/virtualenvwrapper/>`_ is used to manage Python virtual environments.
 
 ::
 
@@ -66,3 +68,21 @@ Ensure ~/.bashrc contains the following:
     for bcfile in ${COMPLETION_PATH}/* ; do
         [ -f "\$bcfile" ] && . \$bcfile
     done
+
+Diamond-Patterns
+^^^^^^^^^^^^^^^^
+
+**project-system** is designed to work with `Diamond-Patterns <http://diamond-patterns.rtfd.io>`_, which is installed with ``pip``:
+
+::
+
+    pip install diamond-patterns
+
+The natural way to start a new project is:
+
+::
+
+    project-new my-new-article
+    diamond pattern article
+
+Here, ``article`` can be replaced with any of the available patterns.  Read the `Diamond-Patterns <http://diamond-patterns.rtfd.io>`_ documentation to learn more.

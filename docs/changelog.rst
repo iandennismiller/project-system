@@ -25,7 +25,23 @@ Changelog
 - revise command line options
 - add documentation
 
+0.1.3
+-----
+
+2018-05-19
+
+- no hardcoded paths
+
+0.1.2
+-----
+
+2017-07-19
+
+- fix WORK_CMD
+
 0.1.0
 -----
+
+2016-10-01
 
 - initial release

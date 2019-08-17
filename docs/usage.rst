@@ -46,7 +46,7 @@ By default, it opens several ``tmux`` panels and a text editor.
 project-conf-init
 ^^^^^^^^^^^^^^^^^
 
-Create a basic configuration file called ``~/.project-system.conf``. 
+Create a basic configuration file called ``~/.project-system.conf``.
 Overwrites any file that is already present.
 
 project-git-init
@@ -54,4 +54,3 @@ project-git-init
 
 Sets up a folder as a git repository.
 This is usually not called directly.
-

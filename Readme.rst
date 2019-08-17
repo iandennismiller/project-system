@@ -53,8 +53,16 @@ To get the most from project-system, use `tmux <https://github.com/tmux/tmux/wik
 
     apt install tmux
 
+To install bash completion scripts:
+
+::
+
+    project-completion-init
+
+Now the `project-workon` script supports auto-completion of projects by name.
+
 Online Resources
 ----------------
 
 - `Documentation <https://project-system.readthedocs.io>`_
-- `Open Source Project <https://github.com/iandennismiller/project-system>`_
+- `Source Code <https://github.com/iandennismiller/project-system>`_

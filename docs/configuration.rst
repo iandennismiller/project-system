@@ -27,7 +27,16 @@ Sample Configuration
     WORK_CMD="workon"
 
     # command to open an editor focused on the current path
-    EDIT_CMD="subl ."
+    # Sublime Text
+    # EDIT_CMD="subl ."
+    # VS Code
+    EDIT_CMD="code ."
+    # emacs
+    # EDIT_CMD="emacs ."
+    # vi
+    # EDIT_CMD="vi ."
 
     # python interpreters
     PYTHON_BIN=/usr/bin/python3
+
+    VIRTUALENVWRAPPER_BIN=/usr/local/bin/virtualenvwrapper.sh

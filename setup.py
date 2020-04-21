@@ -32,6 +32,7 @@ setup(
         "bin/project-open",
         "bin/project-workon",
         "bin/project-rebuild",
+        "bin/project-clone",
     ],
     long_description=read('Readme.rst'),
     classifiers=[],  # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
